@@ -6,3 +6,81 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    flex-shrink: 0;
+}
+
+#last-col {
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.topic {
+    padding: 25px 25px 25px 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.topic-list {
+    padding: 15px 15px 15px 20px;
+    border-bottom: 1px solid black;
+}
+
+.topic-list a {
+    color: #848487;
+    text-decoration: none;
+}
+
+.content {
+    color: #797A7E;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    padding: 10px;
+}
+
+.content ul li {
+    padding: 10px;
+    margin-left: 65px;
+}
+
+.content .code-box {
+    background-color:#F7F7F7;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 815px) {
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+        overflow: scroll;
+    }
+
+    #last-col {
+        margin-top: 275px;
+        padding: 20px;
+        margin-bottom: 110px;
+        margin-left: 10px;
+    }
+}
