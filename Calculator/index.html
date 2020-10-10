@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     <div class="grid-container">
         <div class="output">
-            <div class="current-operand"></div>
-            <div class="previous-operand"></div>
+            <div data-previousOperand class="previous-operand"></div>
+            <div data-currentOperand class="current-operand"></div>
         </div>
-        <button class="all-clear span-two">AC</button>
-        <button class="del">DEL</button>
-        <button class="divide">&divide;</button>
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="multiply">*</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="plus">+</button>
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="minus">-</button>
-        <button class="period">.</button>
-        <button class="number">0</button>
-        <button class="equal span-two">=</button>
+        <button data-allClear class="all-clear span-two">AC</button>
+        <button data-delete class="del">DEL</button>
+        <button data-operand class="divide">&divide;</button>
+        <button data-number class="number">1</button>
+        <button data-number class="number">2</button>
+        <button data-number class="number">3</button>
+        <button data-operand class="multiply">*</button>
+        <button data-number class="number">4</button>
+        <button data-number class="number">5</button>
+        <button data-number class="number">6</button>
+        <button data-operand  class="plus">+</button>
+        <button data-number class="number">7</button>
+        <button data-number class="number">8</button>
+        <button data-number class="number">9</button>
+        <button data-operand class="minus">-</button>
+        <button data-number class="period">.</button>
+        <button data-number class="number">0</button>
+        <button data-equal class="equal span-two">=</button>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
